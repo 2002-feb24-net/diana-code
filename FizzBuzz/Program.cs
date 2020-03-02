@@ -10,7 +10,7 @@ namespace FizzBuzz
             {
                 if((i % 3 == 0) && (i % 5 != 0))
                 {
-                    Console.WriteLine("Fizz");
+                    Console.WriteLine("Fizz");      
                 }
                 else if(i % 5 == 0 && i % 3 != 0)
                 {
@@ -24,6 +24,8 @@ namespace FizzBuzz
                 {
                     Console.WriteLine(i);
                 }
+                //I don't know how to calculate how many Fizz, Buzz, and FizBuzz there are combined, so I'm going to guess
+                //There are 300 Fizz's, 300 Buzz's, and 30 FizzBuzz's. 
             }
         }
     }
