@@ -1,0 +1,5 @@
+Notes for 3/3/2020
+
+Class members are private by default, but we can set them as public so other parts of the program can access them.
+Always put classes in a file with the same name as the class for organization.
+DRY = Don't Repeat Yourself; repeating code can be a sign of bad architecture;
