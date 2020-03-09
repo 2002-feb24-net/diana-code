@@ -1,5 +1,8 @@
 ﻿using System;
-using
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 
 namespace PersonList
 {
@@ -19,6 +22,51 @@ namespace PersonList
             peopleList.Add(person3);
             peopleList.Add(person4);
             peopleList.Add(person5);
+
+            Console.WriteLine(peopleList);
         }
+
+        static void Duplicates()
+        {
+            bool hasDuplicates<string>(List<string> peopleList) {
+                var hs = new HashSet<string>();
+
+                for (var i = 0; i < peopleList.Count; ++i) {
+                    if (!hs.Add(peopleList[i])) 
+                    {
+                    
+                    return true;
+                    }
+                } else
+                {
+                    return false;
+                }
+            
+            }
+        }
+
+        // Using Insertion Sort to Sort through peopleList
+
+        static int[] InsertionSort(int[] inputArray)
+        {
+            string[] inputArray = peopleList.ToArray();
+
+            for (int i = 0; i < inputArray.Length - 1; i++)
+            {
+                for (int j = i + 1; j > 0; j--)
+                {
+                    if (inputArray[j - 1] > inputArray[j])
+                    {
+                        int temp = inputArray[j - 1];
+                        inputArray[j - 1] = inputArray[j];
+                        inputArray[j] = temp;
+                    }
+                  }
+            }
+            return inputArray;         
+        }
+        //The difference between an insertion sort and a bubble sort is that an insertion sort builds 
+        // the final sorted array one item at a time, whereas a bubble sort repeatedly iterates through
+        // an array and swaps unsorted elements 2 at a time. 
     }
 }

@@ -7,7 +7,7 @@ namespace PersonList
         private string Name { get; set }
         private int Age { get; set }
 
-        private Person (string name, int age)
+        public Person (string name, int age)
         {
             Name = name;
             Age = age;
