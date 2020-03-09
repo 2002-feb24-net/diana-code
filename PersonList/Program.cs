@@ -24,6 +24,10 @@ namespace PersonList
             peopleList.Add(person5);
 
             Console.WriteLine(peopleList);
+            var firstMethod = Duplicates();
+            var secondMethod = InsertionSort(int[] inputArray);
+            Console.WriteLine(firstMethod);
+            Console.WriteLine(secondMethod);
         }
 
         static void Duplicates()
