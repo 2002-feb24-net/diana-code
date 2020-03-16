@@ -4,7 +4,7 @@ namespace palindrome
 {
     public class Class1: IPalindrome
     {
-            public static string Palindrome(string word)
+            public bool Palindrome(string word)
         {
             // my previous regex /[^0-9a-zA-Z]/g,''
             string word = word.Replace(@"^\w+$","").ToLower();
@@ -18,10 +18,5 @@ namespace palindrome
                 return false;
             }
         } 
-    }
-
-    interface IPalindrome
-    {
-        string word {get;} 
     }
 }

@@ -1,13 +1,12 @@
 ﻿using System;
-using palindrome;
 
-namespace Palindrome
+namespace LimsKitchen
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Palindrome("kayak"));
+            Console.WriteLine("Hello World!");
         }
     }
 }

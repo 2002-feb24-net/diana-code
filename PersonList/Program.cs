@@ -16,7 +16,7 @@ namespace PersonList
             Person person4 = new Person("Bernard", 24);
             Person person5 = new Person("Bailey", 25);
 
-            var peopleList = new Lists<string> (); 
+            var peopleList = new List <Person> (); 
             peopleList.Add(person1);
             peopleList.Add(person2);
             peopleList.Add(person3);
@@ -30,9 +30,8 @@ namespace PersonList
             Console.WriteLine(secondMethod);
         }
 
-        static void Duplicates()
+        static bool Duplicates()
         {
-            bool hasDuplicates<string>(List<string> peopleList) {
                 var hs = new HashSet<string>();
 
                 for (var i = 0; i < peopleList.Count; ++i) {
@@ -46,7 +45,7 @@ namespace PersonList
                     return false;
                 }
             
-            }
+            
         }
 
         // Using Insertion Sort to Sort through peopleList

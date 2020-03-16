@@ -1,14 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
-namespace RockPaperScissors.App
+namespace RockPaperScissors
 {
-    public class RockPaperScissorsGame
+    class RockPaperScissorsGame
     {
-        public RockPaperScissorsGame()
-        {
-        }
-
         // fields
         // int wins = 0;
         // int losses = 0;
@@ -24,11 +20,7 @@ namespace RockPaperScissors.App
             Console.Write("Round " + roundNumber + ". Enter R, P, or S: ");
             string input = Console.ReadLine();
 
-            var computersMove = DecideMove();
-
-            // some people put var literally everywhere
-
-
+            string computersMove = DecideMove();
             Console.WriteLine("Computer chose " + computersMove);
 
             // e.g... a bunch of nested if-else
@@ -97,13 +89,13 @@ namespace RockPaperScissors.App
             Console.WriteLine(); // line break
         }
 
-        /*string DecideMove()
+        string DecideMove()
         {
             if (!roundResults.Contains("loss"))
             {
                 return "P";
             }
-            return "S"; 
-        }*/
+            return "S";
+        }
     }
 }

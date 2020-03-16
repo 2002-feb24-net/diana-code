@@ -1,10 +1,22 @@
-﻿using System;
+﻿using RPSLibrary;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
 namespace RockPaperScissors.App
 {
-    public class InputterOutputter
+    // class (and interface, etc.) default access is "internal"
+    // the only access that makes sense is "public" "internal"
+    public class InputterOutputter : IInputterOutputter
     {
-        public InputterOutputter()
+        public void Output(string str)
         {
+            Console.Write(str);
+        }
+
+        public string Input()
+        {
+            return Console.ReadLine();
         }
     }
 }

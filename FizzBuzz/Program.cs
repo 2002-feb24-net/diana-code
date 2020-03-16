@@ -15,6 +15,8 @@ namespace FizzBuzz
             can see them without running the code. */
         static void Main(string[] args)
         {
+            string fizz = 0;
+            strin
             for (int i = 1; i <= 1000; i++)
             {
                 if((i % 3 == 0) && (i % 5 != 0))
