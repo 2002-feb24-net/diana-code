@@ -1,9 +1,9 @@
 using System;
 
-namespace Palindrome
+namespace Task
 {
     interface IPalindrome
     {
-        public bool Palindrome(string word);
+        public bool MakePalindrome(string word);
     }
 }
