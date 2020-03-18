@@ -15,21 +15,26 @@ namespace FizzBuzz
             can see them without running the code. */
         static void Main(string[] args)
         {
-            string fizz = 0;
-            strin
+            int fizz = 0;
+            int buzz = 0;
+            int fizzbuzz = 0;
+
             for (int i = 1; i <= 1000; i++)
             {
                 if((i % 3 == 0) && (i % 5 != 0))
                 {
-                    Console.WriteLine("Fizz");      
+                    Console.WriteLine("Fizz"); 
+                    fizz++;     
                 }
                 else if(i % 5 == 0 && i % 3 != 0)
                 {
                     Console.WriteLine("Buzz");
+                    buzz++;
                 }
                 else if(i % 5 == 0 && i % 3 == 0)
                 {
                     Console.WriteLine("FizzBuzz");
+                    fizzbuzz++;
                 }
                 else
                 {
@@ -38,6 +43,9 @@ namespace FizzBuzz
                 //I don't know how to calculate how many Fizz, Buzz, and FizBuzz there are combined, so I'm going to guess
                 //There are 300 Fizz's, 300 Buzz's, and 30 FizzBuzz's. 
             }
+            Console.WriteLine("Number of Fizzes: " + fizz);
+            Console.WriteLine("Number of Buzzes: " + buzz);
+            Console.WriteLine("Number of FizzBuzzes: " + fizzbuzz);
         }
     }
 }
