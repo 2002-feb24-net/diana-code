@@ -40,12 +40,14 @@ namespace FizzBuzz
                 {
                     Console.WriteLine(i);
                 }
-                //I don't know how to calculate how many Fizz, Buzz, and FizBuzz there are combined, so I'm going to guess
-                //There are 300 Fizz's, 300 Buzz's, and 30 FizzBuzz's. 
+               
             }
             Console.WriteLine("Number of Fizzes: " + fizz);
             Console.WriteLine("Number of Buzzes: " + buzz);
             Console.WriteLine("Number of FizzBuzzes: " + fizzbuzz);
+            //Number of Fizzes: 267
+            //Number of Buzzes: 134
+            //Number of FizzBuzzes: 66
         }
     }
 }
