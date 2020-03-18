@@ -7,10 +7,21 @@ namespace PersonList
         private string Name { get; set; }
         private int Age { get; set; }
 
-        public Person (string name, int age)
+        public Person (string Name, int age)
         {
-            this.Name = name;
-            Age = age;
+            this.Name = Name;
+            this.Age = age;
         }
+
+        public Person()
+        {
+            this.Name = "Jane Doe";
+        }
+
+        public override string ToString()
+        {
+            //return "Person: " + Name + " " + Age;
+            return "Person: " + Name ;
+        }        
     }
 }
