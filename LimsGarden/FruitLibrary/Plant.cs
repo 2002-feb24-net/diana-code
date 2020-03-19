@@ -6,7 +6,7 @@ namespace FruitLibrary
     {
         public virtual string name { get; set; }
         public virtual int price { get; set; }
-        public virtual int count { get; set; }
+        public virtual int count { get; set;}
 
         public virtual bool ToBuy()
         {
