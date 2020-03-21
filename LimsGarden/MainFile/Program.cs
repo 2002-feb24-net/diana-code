@@ -1,4 +1,5 @@
 ﻿using System;
+using FruitLibrary;
 
 namespace MainFile
 {
@@ -11,6 +12,8 @@ namespace MainFile
             // Create a database of customers (Create this somewhere else)
             // Create a way to determine if it's a new or returning customer
             // Pass customer into location that they're shopping at to pass into the rest of the code
+            var shop = new Store();
+            shop.Welcome(); 
         }
     }
 }
