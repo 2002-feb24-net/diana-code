@@ -4,10 +4,24 @@ namespace FruitLibrary
 {
     public class Store  
     {
-        public void Welcome()
+        
+        public void ShopLocation()
         {
             Console.Clear();
             Console.WriteLine("Welcome to Lim's Garden!");
+            Console.WriteLine();
+            Console.WriteLine("Please select a location below:");
+            Console.WriteLine();
+            Console.WriteLine("California");
+            Console.WriteLine("Washington");
+            Console.WriteLine("Texas");
+            var response = Console.ReadLine();
+
+        }
+        public void Welcome()
+        {
+            Console.Clear();
+            Console.WriteLine("Howdy!");
             Console.WriteLine();
             Console.WriteLine("How may we help you today?");
             Console.WriteLine();
@@ -33,24 +47,28 @@ namespace FruitLibrary
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Nectarine")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Loquat")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Asian Apple")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else 
                 {
@@ -78,24 +96,28 @@ namespace FruitLibrary
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Asparagus")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Carrot")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Bell Pepper")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else 
                 {
@@ -123,24 +145,28 @@ namespace FruitLibrary
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Nectarine Tree")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Lemon Tree")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else if(fruitChoice == "Rose Bush")
                 {
                     Console.Clear();
                     Console.WriteLine("How many would you like?");
                     string amount = Console.ReadLine();
+                    Console.WriteLine("Great! Your total is: ");
                 }
                 else 
                 {
@@ -149,6 +175,10 @@ namespace FruitLibrary
                     // Create a way to return to beginning of fruit prompt
                 }
 
+            }
+             else
+            {
+                Console.WriteLine("Error: Please try again.");
             }
             
         }

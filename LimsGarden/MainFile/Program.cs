@@ -13,6 +13,7 @@ namespace MainFile
             // Create a way to determine if it's a new or returning customer
             // Pass customer into location that they're shopping at to pass into the rest of the code
             var shop = new Store();
+            shop.ShopLocation();
             shop.Welcome(); 
         }
     }
