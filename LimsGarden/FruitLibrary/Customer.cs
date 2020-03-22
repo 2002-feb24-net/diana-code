@@ -5,7 +5,7 @@ namespace FruitLibrary
     public class Customer 
     {
         public string name;
-        public void 
+        //public void
     }
 }
 // Store name of customer

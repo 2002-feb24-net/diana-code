@@ -2,7 +2,7 @@ using System;
 
 namespace FruitLibrary 
 {
-    public class LoquatTree: Plant  
+    public class NectarineTree: Plant  
     {
         
     }
